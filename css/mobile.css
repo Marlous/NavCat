@@ -1,0 +1,56 @@
+/* 解决屏幕比较小的问题 */
+/* 左侧导航栏在宽度小于 690px 时消失 */
+@media screen and (max-width: 690px) {
+    #body-left {
+        display: none !important;
+    }
+
+    #body-right {
+        margin: 0;
+    }
+
+    #body-right-top {
+        display: none;
+    }
+
+    #body-right-bottom {
+        padding: 0;
+    }
+
+    #fly {
+        display: block !important;
+    }
+}
+
+@media screen and (max-height: 537px) {
+    #body-left {
+        display: none !important;
+    }
+
+    #body-right {
+        margin: 0;
+    }
+
+    #body-right-top {
+        display: none;
+    }
+
+    #body-right-bottom {
+        padding: 0;
+    }
+
+    #fly {
+        display: block !important;
+    }
+}
+
+/* 顶部搜索栏会在宽度小于 1140px 时消失 */
+@media screen and (max-width: 1140px) {
+    #body-right-top {
+        display: none;
+    }
+
+    #body-right-bottom {
+        padding: 0;
+    }
+}
