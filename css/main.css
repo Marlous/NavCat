@@ -1,0 +1,132 @@
+/* 整个页面左边固定的边栏 */
+/* 左边固定的边栏位置样式 */
+#body-left {
+    position: fixed;
+    height: 100vh;
+    width: 220px;
+    background-color: white;
+    box-shadow: 5px 0 10px 4px #EBEDEB;
+}
+
+/* 导航栏 */
+#nav p:first-child {
+    margin: 0;
+    font-weight: 800;
+    font-size: larger;
+    text-shadow: 0 0 15px #00bbf0;
+}
+
+#nav p:nth-child(2) {
+    color: #898989;
+    font-size: small;
+    font-weight: bold;
+}
+
+#nav img {
+    height: 64px;
+    width: 64px;
+}
+
+#nav a {
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
+    color: #898989;
+    font-weight: bold;
+    border: solid 2px transparent;
+    border-radius: 20px;
+    width: 150px;
+}
+
+#nav a:hover {
+    color: white;
+    font-weight: bold;
+    background-color: #898989;
+    border-radius: 20px;
+    width: 140px;
+    transition: 200ms;
+}
+
+/* 空的 flex 成员 */
+#temp {
+    flex-grow: 1;
+}
+
+/* 页脚 */
+.contact {
+    display: flex;
+    flex-direction: row;
+    padding: 8px 16px;
+}
+
+.contact img {
+    height: 20px;
+    width: 20px;
+}
+
+.contact span {
+    line-height: 20px;
+    font-weight: bold;
+    font-size: small;
+    color: gray;
+}
+
+.copyright {
+    font-size: small;
+    color: gray;
+}
+
+
+/* 整个页面右边主体内容 */
+/* 右边主体内容样式 */
+#body-right {
+    margin-left: 220px;
+    background-color: #F5F8F5;
+}
+
+
+/* 若干个大的版面 */
+.board-title {
+    padding-bottom: 10px;
+    text-align: left;
+    font-weight: bolder;
+    font-size: larger;
+    color: #898989;
+}
+
+.item {
+    height: 120px;
+    width: 180px;
+    margin: 8px;
+    text-decoration: none !important;
+    background-color: white;
+    box-shadow: 0 0 15px 0 #cccaca;
+    border-radius: 10px;
+}
+
+.intro,
+.des {
+    padding: 5px;
+}
+
+.intro img {
+    height: 40px;
+    width: 40px;
+    border-radius: 8px;
+    margin-right: 8px;
+}
+
+.intro p {
+    text-align: left;
+    font-weight: bold;
+    color: #393e46;
+}
+
+.des {
+    font-size: small;
+    color: #898989;
+}
+
+/* 鼠标悬停在 item 上的样式 */
+.item:hover {
+    box-shadow: 0 0 15px 0 #00bbf0;
+}
